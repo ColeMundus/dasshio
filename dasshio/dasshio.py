@@ -18,8 +18,7 @@ from scapy.all import UDP
 from scapy.all import sniff
 
 
-BASE_URL = os.environ.get("HA_BASE_URL") or "http://192.168.86.3:8123"
-
+BASE_URL = "http://192.168.86.3:8123"
 
 def signal_handler(signal, frame):
     logger.warning("Caught signal: %s" % signal)
